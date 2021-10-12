@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    width: 400px;
+    text-align: left;
+    margin: auto;
+}
+
+.center ul {
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.center ul .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    background-color: rgb(0, 110, 255);
+    color: #eee;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    text-align: center;
+    pointer-events: none;
+    font-family: 'Poppins', sans-serif;
+    transition: opacity .5s .75s ease-out;
+}
+
+.center ul:hover .text {
+    opacity: 0;
+    transition: opacity .5s .125s ease-out;
+}
+
+.center ul li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: rgb(0, 110, 255);
+    line-height: 55px;
+    margin: 0 -16px;
+    border-radius: 0px;
+    transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+}
+
+.center ul li:hover {
+    background: rgb(0, 110, 255);
+}
+
+.center ul li i {
+    color: #eee;
+    font-size: 22px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.center ul:hover li i {
+    opacity: 1;
+}
+
+.center ul li:nth-child(1) {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.center ul li:nth-child(5) {
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.center ul:hover li {
+    border-radius: 50px;
+    margin: 0 5px;
+}
+
+@media only screen and(max-width:430px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        height: 100vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .center {
+        width: 400px;
+        text-align: left;
+    }
+    .center ul {
+        list-style-type: none;
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        margin-left: 45px;
+    }
+    .center ul .text {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        background-color: rgb(0, 110, 255);
+        color: #eee;
+        line-height: 50px;
+        border-radius: 50px;
+        font-size: 22px;
+        text-align: center;
+        pointer-events: none;
+        font-family: 'Poppins', sans-serif;
+        transition: opacity .5s .75s ease-out;
+    }
+    .center ul:hover .text {
+        opacity: 0;
+        transition: opacity .5s .125s ease-out;
+    }
+    .center ul li {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        background: rgb(0, 110, 255);
+        line-height: 55px;
+        margin: 0 -16px;
+        border-radius: 0px;
+        transition: background-color .5s ease-out, border-radius .5s .25s ease-out, margin .5s .25s ease-out;
+    }
+    .center ul li:hover {
+        background: rgb(0, 110, 255);
+    }
+    .center ul li i {
+        color: #eee;
+        font-size: 22px;
+        opacity: 0;
+        transition: opacity 1s;
+    }
+    .center ul:hover li i {
+        opacity: 1;
+    }
+    .center ul li:nth-child(1) {
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    .center ul li:nth-child(5) {
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .center ul:hover li {
+        border-radius: 50px;
+        margin: 0 5px;
+    }
+}
